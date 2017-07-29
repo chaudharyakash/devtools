@@ -11,11 +11,10 @@ pwd
 
 if [ -d "$BUILD_BASE/build-wf" ]; then
   echo "doing git pull"
-  cd "$BUILD_BASE/build-wf"
-  git pull
+  git clone "https://github.com/chaudharyakash/jenkins.git"
 else
   echo "doing git clone"
-  git clone "$GITHUB_URL/build-wf.git"
+  git clone "https://github.com/chaudharyakash/jenkins.git"
 fi
 sleep 2
 
